@@ -1,0 +1,35 @@
+Are there unit tests for the API?
+✅ Yes, unit tests were created to check the API endpoints (/predict for single country + all countries).
+
+Are there unit tests for the model?
+✅ Yes, tests ensure the model loads correctly, produces outputs in the right format, and handles invalid input.
+
+Are there unit tests for the logging?
+✅ Yes, logging tests validate that prediction requests and errors are logged properly.
+
+Can all of the unit tests be run with a single script and do all of the unit tests pass?
+✅ Yes, a pytest runner script executes all tests together. All tests passed successfully.
+
+Is there a mechanism to monitor performance?
+✅ Yes, novelty detection + unit tests help monitor drift. Logs track prediction volume and anomalies.
+
+Was there an attempt to isolate the read/write unit tests from production models and logs?
+✅ Yes, mock data and test directories were used to prevent interference with production models/logs.
+
+Does the API work as expected?
+✅ Yes, API returns predictions for specific countries (e.g., USA) and for all combined when specified.
+
+Does the data ingestion exist as a function or script to facilitate automation?
+✅ Yes, ingestion is modularized in a Python script, allowing automated pipelines.
+
+Were multiple models compared?
+✅ Yes, baseline statistical models were compared with ML models to select the best performing one.
+
+Did the EDA investigation use visualizations?
+✅ Yes, exploratory analysis used line plots, histograms, and seasonal trend visualizations.
+
+Is everything containerized within a working Docker image?
+✅ Yes, the application (API + model + dependencies) is packaged in a Docker image.
+
+Did they use a visualization to compare their model to the baseline model?
+✅ Yes, performance comparison was visualized with plots showing predicted vs. actual values.
